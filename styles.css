@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url("back-placeholder1.png");
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-areas:
+    "aside nav  nav"
+    "aside main main"
+    "aside main main";
+  grid-template-rows: 18%;
+  grid-template-columns: 15% 1fr 1fr;
+  width: 92.75%;
+  height: 96rem;
+}
+
+aside {
+  border: 1px black solid;
+  grid-area: aside;
+  display: grid;
+  grid-template-areas: 
+    "aside-header"
+    "aside-main"
+    "aside-admin"
+    "aside-categories";
+}
+
+.aside-header {
+  grid-area: aside-header;
+}
+
+.aside-main {
+  grid-area: aside-main;
+}
+
+.aside-admin {
+  grid-area: aside-admin;
+}
+
+.aside-categories {
+  grid-area: aside-categories;
+}
+
+
+nav {
+  border: 1px black solid;
+  grid-area: nav;
+  display: grid;
+  grid-template-areas: 
+    "search-bar"
+    "summary-bar";
+  grid-template-rows: 30% 1fr;
+  grid-template-columns: 1fr;
+}
+
+main {
+  border: 1px black solid;
+  display: grid;
+  grid-area: main;
+  grid-template-areas: 
+    "chart  chart"
+    "resume social"
+    "resume social";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 34.25%;
+}
+
+.chart {
+  border: 1px black solid;
+  grid-area: chart;
+}
+
+.resume {
+  border: 1px black solid;
+  grid-area: resume;
+}
+
+.social {
+  border: 1px black solid;
+  grid-area: social;
+}
+
+.round-image {
+  border-radius: 100%;
+  width: 5rem;
+  height: 5rem;
+}
+
+.search-bar {
+  border: black 1px solid;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+}
+
+.summary-bar {
+  border: black 1px solid;
+}
+
+.nav-item {
+  width: 2rem;
+  height: 2rem;
+  margin: 0rem;
+  padding: 0rem;
+}
+
+.nav-search {
+  width: 30%;
+}
+
+.left-arrow {
+  width: .5rem;
+}
+
+.hamburger-and-arrow {
+
+}
+
